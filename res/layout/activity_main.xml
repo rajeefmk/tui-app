@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+ 
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+       
+        />
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/map"    
+        android:layout_weight="1">
+	    <TableRow
+	        android:id="@+id/first"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_weight="1"
+	        >
+	        
+	        <!-- android:layout_alignParentTop="true" -->
+	        
+	        <Button
+	            android:id="@+id/myevent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:textSize="35sp"
+	            android:textStyle="bold"
+	            android:layout_weight="1"
+	            />
+	         <Button
+	            android:id="@+id/volunteerhours"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:textSize="35sp"
+	            android:textStyle="bold"
+	            android:layout_weight="1"
+	            />
+	        
+	    </TableRow>
+	    <TableRow
+	        android:id="@+id/second"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_weight="1"
+	        >
+	        
+	        <!-- android:layout_alignParentTop="true" -->
+	        
+	        <Button
+	            android:id="@+id/newevent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:textSize="35sp"
+	            android:textStyle="bold"
+	            android:layout_weight="1"
+	            />
+	         <Button 
+	            android:id="@+id/pastevent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:textSize="35sp"
+	            android:textStyle="bold"
+	            android:layout_weight="1"
+	            />
+	        
+	    </TableRow>
+	   
+	</TableLayout>
+ 
+</RelativeLayout>
